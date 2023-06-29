@@ -7,6 +7,7 @@
     box-sizing: border-box;
     height: 8vh;
     align-items: flex-end;
+    overflow-x: hidden;
 }
 
 .buttonBox button {
@@ -30,7 +31,7 @@
 
 .container h1 span {
     color: #ffdc69;
-    margin-left:  4px;
+    margin-left:  3px;
     font-family: var(--font-neon);
     animation: 1s fade-text forwards;
     opacity: 0;
@@ -108,8 +109,5 @@
     }
     .container{
         align-items: center;
-    }
-    .mobileButton{
-        transform: translateY(10px);
     }
 }
