@@ -25,7 +25,8 @@
 }
 
 .container h1 span {
-    font-family: var(--font-nabla);
+    color: #ffdc69;
+    font-family: var(--font-exo);
     animation: 1s fade-text forwards;
     opacity: 0;
     left: 100%;

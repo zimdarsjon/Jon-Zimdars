@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <div className={styles.container}>
-            <h1 className={nabla.variable}>
+            <h1 className={exo.variable}>
                 {name.split('').map((letter, index) => {
                     const style = {animationDelay: (0.5 + (name.length - index) / 10) + "s"}
                     return <span style={style} key={index}>{letter}</span>
