@@ -110,7 +110,4 @@
     .container{
         align-items: center;
     }
-    .mobileButton{
-        transform: translateY(10px);
-    }
 }
