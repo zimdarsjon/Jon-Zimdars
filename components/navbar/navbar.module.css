@@ -1,0 +1,102 @@
+.container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 4% 0 4%;
+    box-sizing: border-box;
+    height: 8vh;
+    align-items: baseline;
+}
+
+.buttonBox button {
+    color: #ffdc69;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    transition: color 0.25s ease-in-out;
+    font-size: 1rem;
+    margin: 0 20px 0 20px;
+    font-family: var(--font-exo);
+}
+
+.buttonBox button:hover {
+    color: #ff8825;
+    transition: color 0.25s ease-in-out;
+}
+
+.container h1 span {
+    font-family: var(--font-nabla);
+    animation: 1s fade-text forwards;
+    opacity: 0;
+    left: 100%;
+    position: relative;
+}
+
+/* MOBILE BUTTON */
+.mobileButton {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    width: 80px;
+    height: 80px;
+}
+.mobileButton div {
+    width: 50px;
+    height: 6px;
+    background-color: #ffdc69;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ff8825;
+    transition: all 0.5s ease-in-out;
+}
+.mobileButton div::before,
+.mobileButton div::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background-color: #ffdc69;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ff8825;
+    transition: all 0.5s ease-in-out;
+}
+.mobileButton div::before{
+    transform: translateY(-16px);
+}
+.mobileButton div::after{
+    transform: translateY(16px);
+}
+
+/* ANIMATION */
+.mobileButton.openButton div{
+  transform: translateX(-50px);
+  background-color: transparent;
+  box-shadow: none;
+}
+.mobileButton.openButton div::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.mobileButton.openButton div::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+@keyframes fade-text {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* MEDIA */
+@media only screen and (max-device-width: 480px) {
+    .buttonBox {
+        display: none;
+    }
+    .mobileButton{
+        display: flex;
+    }
+}
