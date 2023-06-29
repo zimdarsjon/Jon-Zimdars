@@ -1,5 +1,11 @@
 import React from 'react';
+import Navbar from '../components/navbar';
+import Page from '../components/page';
 
-export default function Home(){
-    return <h1>Jon Zimdars</h1>
+export default function Home() {
+    return (
+        <Page>
+            <Navbar />
+        </Page>
+    )
 }
