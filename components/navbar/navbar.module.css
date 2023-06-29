@@ -3,10 +3,10 @@
     background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-between;
-    padding: 10px 4% 0 4%;
+    padding: 10px 4% 10px 4%;
     box-sizing: border-box;
     height: 8vh;
-    align-items: baseline;
+    align-items: flex-end;
 }
 
 .buttonBox button {
@@ -24,13 +24,19 @@
     transition: color 0.25s ease-in-out;
 }
 
+.container h1{
+    align-self: flex-end;
+}
+
 .container h1 span {
     color: #ffdc69;
-    font-family: var(--font-exo);
+    margin-left:  4px;
+    font-family: var(--font-neon);
     animation: 1s fade-text forwards;
     opacity: 0;
     left: 100%;
     position: relative;
+    text-shadow: 2px 2px 20px #ff8825;
 }
 
 /* MOBILE BUTTON */
@@ -47,7 +53,7 @@
     height: 6px;
     background-color: #ffdc69;
     border-radius: 5px;
-    box-shadow: 0 2px 5px #ff8825;
+    box-shadow: 0 2px 20px #ff8825;
     transition: all 0.5s ease-in-out;
 }
 .mobileButton div::before,
@@ -58,7 +64,7 @@
     height: 6px;
     background-color: #ffdc69;
     border-radius: 5px;
-    box-shadow: 0 2px 5px #ff8825;
+    box-shadow: 0 2px 20px #ff8825;
     transition: all 0.5s ease-in-out;
 }
 .mobileButton div::before{
@@ -99,5 +105,11 @@
     }
     .mobileButton{
         display: flex;
+    }
+    .container{
+        align-items: center;
+    }
+    .mobileButton{
+        transform: translateY(10px);
     }
 }

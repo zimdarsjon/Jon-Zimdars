@@ -1,18 +1,19 @@
 import React from 'react';
 import styles from './navbar.module.css';
-import { Nabla, Exo } from 'next/font/google';
+import { Exo, Tilt_Neon } from 'next/font/google';
 
 const { useEffect, useState } = React;
 
 const name = 'Jon Zimdars';
 
-const nabla = Nabla({
-    variable: '--font-nabla',
-    subsets: ['latin']
-})
 
 const exo = Exo({
     variable: '--font-exo',
+    subsets: ['latin']
+})
+
+const neon = Tilt_Neon({
+    variable: '--font-neon',
     subsets: ['latin']
 })
 
@@ -25,9 +26,9 @@ export default function Navbar() {
 
     return (
         <div className={styles.container}>
-            <h1 className={exo.variable}>
+            <h1 className={neon.variable}>
                 {name.split('').map((letter, index) => {
-                    const style = {animationDelay: (0.5 + (name.length - index) / 10) + "s"}
+                    const style = {animationDelay: (0.5 + (name.length - index) / 30) + "s"}
                     return <span style={style} key={index}>{letter}</span>
                 })}
             </h1>
