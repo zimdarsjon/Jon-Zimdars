@@ -33,9 +33,8 @@
     color: #ffdc69;
     margin-left:  3px;
     font-family: var(--font-neon);
-    animation: 1s fade-text forwards;
-    opacity: 0;
-    left: 100%;
+    opacity: 1;
+    left: 0;
     position: relative;
     text-shadow: 2px 2px 20px #ff8825;
 }
