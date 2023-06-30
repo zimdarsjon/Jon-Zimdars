@@ -106,4 +106,7 @@
     .leftColumn{
         margin-bottom: 5vh;
     }
+    .container h1{
+        text-shadow: 2px 2px 20px #ff8825;
+    }
 }
