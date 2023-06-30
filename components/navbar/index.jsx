@@ -28,8 +28,8 @@ export default function Navbar() {
         <div className={styles.container}>
             <h1 className={neon.variable}>
                 {name.split('').map((letter, index) => {
-                    const style = {animationDelay: (0.5 + (name.length - index) / 30) + "s"}
-                    return <span style={style} key={index}>{letter}</span>
+                    //const style = {animationDelay: (0.5 + (name.length - index) / 30) + "s"}
+                    return <span key={index}>{letter}</span>
                 })}
             </h1>
             <div className={open ? styles.mobileButton + ' ' + styles.openButton : styles.mobileButton} onClick={() => setOpen(!open)}>

@@ -15,8 +15,8 @@ export default function Intro() {
         <div className={neon.variable + ' ' + styles.container}>
             <div className={styles.leftColumn}>
                 <div className={styles.title}>
-                    <h1><span style={{animationDelay: '2s'}}>Full</span> <span style={{animationDelay: '3s'}}>Stack</span></h1>
-                    <h1><span style={{animationDelay: '4s'}}>Developer</span></h1>
+                    <h1><span style={{animationDelay: '1s'}}>Full</span> <span style={{animationDelay: '2s'}}>Stack</span></h1>
+                    <h1><span style={{animationDelay: '3s'}}>Developer</span></h1>
                     <div className={styles.titleLine}></div>
                 </div>
             </div>
