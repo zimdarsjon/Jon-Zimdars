@@ -2,11 +2,13 @@ import React from 'react';
 import Section from '../section';
 import styles from './titlesection.module.css';
 import LogoBox from './logobox.jsx';
+import Image from 'next/image';
+import Logo from '../../public/jzlogo.png';
 
 export default function TitleSection() {
     return (
         <Section color='clear'>
-            <p className={styles.logo}>LOGO</p>
+            <Image className={styles.logo} src={Logo} alt='JZ Logo'/>
             <div className={styles.container}>
                 <h1>Jon Zimdars</h1>
                 <h2>Full Stack Software Developer</h2>
