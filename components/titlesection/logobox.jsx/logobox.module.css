@@ -25,3 +25,15 @@
     width: 60%;
     transition: 0.2s linear;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .container{
+        width: 90%;
+        height: auto;
+        justify-content: space-evenly;
+    }
+    .iconWrapper{
+        width: 30%;
+        height: 10vh;
+    }
+}

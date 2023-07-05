@@ -3,7 +3,7 @@ import Section from '../section';
 import styles from './titlesection.module.css';
 import LogoBox from './logobox.jsx';
 import Image from 'next/image';
-import Logo from '../../public/jzlogo.png';
+import Logo from '../../public/logos/jzlogo.png';
 
 export default function TitleSection() {
     return (

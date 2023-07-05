@@ -2,14 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './logobox.module.css';
 
-import css from '../../../public/css-3.svg';
-import html from '../../../public/html-5.svg';
-import javascript from '../../../public/javascript.svg';
-import github from '../../../public/github-icon.svg';
-import mysql from '../../../public/mysql-icon.svg';
-import postgres from '../../../public/postgresql.svg';
-import react from '../../../public/react.svg';
-import nextjs from '../../../public/nextjs-icon.svg';
+import css from '../../../public/logos/css-3.svg';
+import html from '../../../public/logos/html-5.svg';
+import javascript from '../../../public/logos/javascript.svg';
+import github from '../../../public/logos/github-icon.svg';
+import mysql from '../../../public/logos/mysql-icon.svg';
+import postgres from '../../../public/logos/postgresql.svg';
+import react from '../../../public/logos/react.svg';
+import nextjs from '../../../public/logos/nextjs-icon.svg';
 
 const icons = [
     {
