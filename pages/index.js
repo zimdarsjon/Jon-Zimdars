@@ -1,13 +1,17 @@
 import React from 'react';
 import Navbar from '../components/navbar';
-import Page from '../components/page';
-import Intro from '../components/intro';
+import BGImage from '../components/bgimage';
+import Section from '../components/section';
 
 export default function Home() {
     return (
-        <Page>
+        <div>
             <Navbar />
-            <Intro />
-        </Page>
+            <BGImage />
+            <Section color='clear'/>
+            <Section />
+            <Section color='clear'/>
+            <Section />
+        </div>
     )
 }
