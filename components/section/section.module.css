@@ -1,0 +1,13 @@
+.clear, .grey{
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.grey{
+    background-color: #1E1E1E;
+}
+
+.clear{
+    background-color: transparent;
+}
