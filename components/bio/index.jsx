@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../section';
 import styles from './bio.module.css';
-import { CgProfile } from 'react-icons/Cg';
+import { CgProfile } from 'react-icons/cg';
 
 export default function Bio(){
     return (
