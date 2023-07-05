@@ -4,10 +4,22 @@
     align-items: center;
     height: 94vh;
     justify-content: center;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .container h2{
     margin: 50px 0 50px 0;
+}
+
+.container h1 b{
+    font-weight: 800;
+}
+
+.container h1{
+    font-size: 80px;
+    transition: ease-in-out 5s;
 }
 
 .logo{
@@ -16,12 +28,28 @@
     height: auto;
     margin-left: 30px;
     margin-top: 30px;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 @media only screen and (max-device-width: 480px) {
     .logo{
         margin-left: 50%;
         transform: translateX(-50%);
+        margin-top: 50px;
         width: 20%;
+    }
+    .container h1{
+        font-size: 60px;
     }
 }

@@ -10,7 +10,7 @@ export default function TitleSection() {
         <Section color='clear'>
             <Image className={styles.logo} src={Logo} alt='JZ Logo'/>
             <div className={styles.container}>
-                <h1>Jon Zimdars</h1>
+                <h1>Jon <b>Zimdars</b></h1>
                 <h2>Full Stack Software Developer</h2>
                 <LogoBox />
             </div>

@@ -7,7 +7,7 @@ export default function Project({ project }) {
         <div className={styles.container}>
             <Image className={styles.picture} src={project.image} alt={project.title}/>
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <p className={styles.description}>{project.description}</p>
             <p className={styles.stack}>{project.techstack}</p>
             <ul>
                 {project.work.map((work) => <li>{work}</li>)}

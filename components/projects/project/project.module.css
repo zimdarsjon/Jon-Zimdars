@@ -20,7 +20,12 @@
 
 .container h3{
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.description{
+    font-size: 20px;
 }
 
 .container p{
@@ -32,6 +37,11 @@
     margin-right: 20px;
 }
 
+.stack{
+    font-style: italic;
+}
+
+
 @media only screen and (max-device-width: 480px) {
     .container{
        width: 90%;
@@ -39,5 +49,7 @@
     }
     .stack{
         text-align: center;
+        padding-left: 2px;
+        padding-right: 2px;
     }
 }
