@@ -5,7 +5,10 @@ export default function Navbar() {
 
     return (
         <div className={styles.container}>
-            Hello
+            <button>Home</button>
+            <button>Github</button>
+            <button>Contact</button>
+            <button>Day Shift</button>
         </div>
     )
 }
