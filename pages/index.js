@@ -5,6 +5,7 @@ import Section from '../components/section';
 import TitleSection from '../components/titlesection';
 import Projects from '../components/projects';
 import Bio from '../components/bio';
+import Stack from '../components/stack';
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
             <TitleSection />
             <Projects />
             <Bio />
-            <Section />
+            <Stack />
         </div>
     )
 }
