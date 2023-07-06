@@ -6,7 +6,7 @@ export default async function handler(req, res){
   switch (req.method) {
     case "POST":
             let newMessage = await db.collection("messages").insertOne(req.query);
-            res.json(newMessage.ops[0]);
+            res.send(200);
             break;
   }
 }
