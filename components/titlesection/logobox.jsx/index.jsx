@@ -49,7 +49,7 @@ const icons = [
 export default function LogoBox() {
     return (
         <div className={styles.container}>
-            {icons.map((icon) => <div className={styles.iconWrapper}><Image src={icon.image} alt={icon.alt} className={styles.icon}/></div>)}
+            {icons.map((icon) => <div className={styles.iconWrapper} key={icon.alt}><Image src={icon.image} alt={icon.alt} className={styles.icon}/></div>)}
         </div>
     )
 }
