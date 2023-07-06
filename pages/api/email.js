@@ -1,3 +1,4 @@
 export default function handler(req, res){
-  console.log('TEST')
+  console.log(req.query);
+  res.send(200);
 }
