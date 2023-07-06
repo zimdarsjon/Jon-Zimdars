@@ -1,0 +1,53 @@
+.btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    transition: all 0.5s ease-in-out;
+}
+
+.brg{
+    height: 6px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.brg::before, .brg::after {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.brg::before{
+    transform: translateY(-16px);
+}
+
+.brg::after{
+    transform: translateY(16px);
+}
+
+.btn.open .brg{
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.btn.open .brg::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.btn.open .brg::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media only screen and (max-device-width: 480px){
+    .btn{
+        display: flex;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './project.module.css';
 
-export default function Project({ project }) {
+export default function Project({ project}) {
     return (
         <div className={styles.container}>
             <Image className={styles.picture} src={project.image} alt={project.title}/>
@@ -10,7 +10,7 @@ export default function Project({ project }) {
             <p className={styles.description}>{project.description}</p>
             <p className={styles.stack}>{project.techstack}</p>
             <ul>
-                {project.work.map((work) => <li>{work}</li>)}
+                {project.work.map((work, i) => <li key={i}>{work}</li>)}
             </ul>
         </div>
     )
