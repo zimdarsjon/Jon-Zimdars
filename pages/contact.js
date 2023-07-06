@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/navbar';
 import Section from '../components/section';
 import BGImage from '../components/bgimage';
+import ContactForm from '../components/contact';
 
 const { useEffect, useState } = React;
 
@@ -18,9 +19,7 @@ export default function Contact(){
         <div>
             <Navbar theme={theme} changeTheme={changeTheme} page='/contact'/>
             <BGImage theme={theme}/>
-            <Section height='94vh' color='clear'>
-                Contact Form
-            </Section>
+            <ContactForm />
         </div>
     )
 }
