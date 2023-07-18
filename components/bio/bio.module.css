@@ -27,4 +27,7 @@
     .left{
         font-size: 120px;
     }
+    .right {
+        width: 90%;
+    }
 }
